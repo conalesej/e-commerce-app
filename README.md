@@ -20,5 +20,5 @@ You may also see any lint errors in the console.
 #### Example
 ![image](https://user-images.githubusercontent.com/60915940/211482898-ac5ef99d-01f4-42da-9c69-1f2d52be169a.png)
 
-### App Snapshot
+## App Snapshot
 ![chrome_76fcC6bLhP](https://user-images.githubusercontent.com/60915940/213706466-2cebbb78-6e6a-414f-9e36-680c8dfe619f.gif)
