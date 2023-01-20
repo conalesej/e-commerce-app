@@ -12,7 +12,6 @@ const cartSlice = createSlice({
   reducers: {
     // Since immer library is already handling the state spreading mutation
     readAll: (state) => {
-      console.log(state);
       return state;
     },
     addToCart: (state, action) => {

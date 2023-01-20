@@ -7,25 +7,12 @@ import Card from "./Card/Card";
 import "./CartCardContainer.scss";
 
 const CartCardContainer: React.FC = () => {
-  const dispatch = useAppDispatch();
-
   const { cart } = useAppSelector((state) => state.cart);
 
   const [cartData, setCartData] = useState<ItemInterface[]>([]);
 
   useEffect(() => {
-    if (cart.length) {
-      setCartData(cart);
-      localStorage.setItem("savedCartData", JSON.stringify(cartData));
-    } else {
-      let newObject = localStorage.getItem("savedCartData");
-      let saveNewObject = JSON.parse(newObject || "{}");
-
-      saveNewObject.forEach((item: ItemInterface) => {
-        dispatch(cartActions.addToCart({ ...item, quantity: 1 }));
-      });
-      setCartData(saveNewObject);
-    }
+    setCartData(cart);
   }, [cart]);
   const displayCards = cartData.map((cart) => {
     return <Card item={cart} key={cart.id} />;
