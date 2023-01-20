@@ -1,0 +1,21 @@
+.Sort-Toggle {
+  display: flex;
+
+  .sort-text-prefix {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .sort-text {
+    // padding: 4px ;
+
+    margin-left: 5px;
+    color: blue;
+    cursor: pointer;
+    border-radius: 10px;
+    border: unset;
+    border: 0.5px solid #cbcbcb;
+  }
+  .sort-text:hover{
+    background-color: #cbcbcb;
+  }
+}

@@ -1,0 +1,61 @@
+.App {
+  display: grid;
+
+  width: 95vw;
+  height: 95vh;
+  margin: 0 auto;
+  // 3 x 3
+  grid-template-columns: 1fr 4.5fr 2fr;
+  grid-template-rows: 1fr 1fr 8fr;
+  gap: 1em;
+
+  font-family: "Montserrat", sans-serif;
+  // font-family: "Lato", sans-serif;
+  .Pannel {
+    display: block;
+    border-radius: 5px;
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.22);
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.22);
+  }
+
+  &-Panel-1 {
+    background: rgb(88, 84, 84);
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+  }
+  &-Panel-2 {
+    background: #f3f3f3;
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+  }
+  &-Panel-3 {
+    background: #f3f3f3;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+
+    &-flexbox {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      &-item.plain-line {
+        height: 60%;
+        border-left: 1px solid gray;
+      }
+    }
+  }
+  &-Panel-4 {
+    height: 100%;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    background: white;
+  }
+  &-Panel-5 {
+    background: yellow;
+    grid-row: 2 / -1;
+    grid-column: 3 / 4;
+  }
+}

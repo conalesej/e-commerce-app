@@ -1,0 +1,26 @@
+.Title-Bar-Cart {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .title-bar-cart-row-1 {
+    margin-left: 30px;
+    font-size: 2.3em;
+    font-weight: 600;
+  }
+  .title-bar-cart-row-2 {
+    margin-right: 30px;
+
+    &-button {
+      border: unset;
+      border-radius: 5px;
+      height: 50px;
+      width: 100px;
+      background-color: #eb3838;
+      cursor: pointer;
+    }
+  }
+}

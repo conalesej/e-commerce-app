@@ -1,0 +1,23 @@
+.Cart-Container {
+  display: grid;
+  min-height: 100%;
+  max-height: 100%;
+  width: 100%;
+
+  grid-template-rows: 1.25fr 6.75fr 2fr;
+
+  .row-1 {
+    grid-row: 1 / 2;
+    background: #cbcbcb;
+  }
+  .row-2 {
+    grid-row: 2 / 3;
+
+    background: #f3f3f3;
+  }
+  .row-3 {
+    grid-row: 3 / 4;
+
+    background: #cbcbcb;
+  }
+}

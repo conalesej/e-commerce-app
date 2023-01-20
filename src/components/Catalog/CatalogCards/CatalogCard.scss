@@ -1,0 +1,89 @@
+.Catalog-card {
+  display: flex;
+  flex-direction: row;
+  max-height: 200px;
+  min-height: 150px;
+  width: 90%;
+  background: rgb(243, 243, 243);
+  border-radius: 5px;
+
+  //   .catalog-panel {
+  //   }
+  .row-1 {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 100px;
+      width: 100px;
+      -webkit-box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.82);
+      -moz-box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.82);
+      box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.82);
+    }
+  }
+  .row-2 {
+    flex-basis: 60%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    padding: 0px 5px;
+    padding-top: 20px;
+
+    overflow-y: auto;
+
+    &-product-name {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    &-product-category {
+      font-size: 1rem;
+      font-weight: 500;
+      color: green;
+    }
+
+    &-product-description {
+      font-size: 1rem;
+      font-weight: 400;
+      padding: 2px;
+
+      .text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* number of lines to show */
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+  .row-3 {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    &-price {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: red;
+    }
+    &-button {
+      background-color: #4caf50;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+  }
+}

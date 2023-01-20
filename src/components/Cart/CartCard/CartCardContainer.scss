@@ -1,0 +1,16 @@
+.Cart-Card-Container {
+  height: 530.13px;
+  width: 100%;
+
+  .cart-card-flexbox {
+    padding: 20px 0px;
+    max-height: 100%;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    overflow-y: auto;
+  }
+}

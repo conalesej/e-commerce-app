@@ -1,0 +1,71 @@
+.Card-container {
+  display: flex;
+  flex-direction: row;
+  max-height: 200px;
+  min-height: 80px;
+  width: 90%;
+
+  background: rgb(243, 243, 243);
+  border-radius: 5px;
+
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.58);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.58);
+
+  .card-row-1 {
+    flex-basis: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 50px;
+      width: 50px;
+      -webkit-box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.82);
+      -moz-box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.82);
+      box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.82);
+    }
+  }
+  .card-row-2 {
+    flex-basis: 35%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+
+    // padding: 0px 5px;
+    // padding-top: 20px;
+
+    &-item {
+    }
+    .text {
+      color: red;
+      font-weight: 500;
+    }
+  }
+  .card-row-3 {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    &-price {
+      font-size: 1.4rem;
+      color: red;
+    }
+    &-button {
+      background-color: #4caf50;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  }
+}
