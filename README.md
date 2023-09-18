@@ -1,4 +1,4 @@
-# e-commerce-app
+# Interview Coding Exam for Landers
 
 ## Getting Started with running the App
 
